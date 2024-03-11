@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        StringTokenizer st = new StringTokenizer(sc.nextLine());
+
+        double index1 = Double.parseDouble(st.nextToken()); // String 타입을 double형으로 변환
+        double index2 = Double.parseDouble(st.nextToken());
+
+        System.out.println((index1 / index2)); // 변수타입이 중요한 문제
+    }
+}

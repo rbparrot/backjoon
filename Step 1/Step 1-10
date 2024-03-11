@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String line1 = sc.nextLine();
+        String line2 = sc.nextLine();
+        int index1 = Integer.parseInt(line1);
+        int[] index2 = new int[3];
+
+        for(int i=2;i>=0;i--){
+            index2[i] = Integer.parseInt(line2.substring(i,i+1)); //뒤에서 부터 저장 ex) index2[2] == 3
+            
+            System.out.println(index1*index2[i]);
+        }
+        System.out.println(index1 * Integer.parseInt(line2));
+
+    }
+}

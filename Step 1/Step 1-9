@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] index = new int[3];
+
+        for(int i=0;i<3;i++){
+            index[i] = Integer.parseInt(st.nextToken());
+        }
+        System.out.println((index[0]+index[1])%index[2]); // (A+B)%C
+        System.out.println(((index[0]%index[2])+(index[1]%index[2]))%index[2]); // ((A%C) + (B%C))%C
+        System.out.println((index[0]*index[1])%index[2]); // (A×B)%C
+        System.out.println(((index[0]%index[2])*(index[1]%index[2]))%index[2]); // ((A%C) × (B%C))%C
+
+    }
+}

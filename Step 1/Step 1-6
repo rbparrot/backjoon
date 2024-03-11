@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        StringTokenizer st = new StringTokenizer(sc.nextLine());
+
+        int index1 = Integer.parseInt(st.nextToken()); // String 타입을 Int 타입으로 변환
+        int index2 = Integer.parseInt(st.nextToken());
+
+        System.out.println(index1 + index2); // 더하기
+        System.out.println(index1 - index2); // 빼기
+        System.out.println(index1 * index2); // 곱하기
+        System.out.println(index1 / index2); // 나누기
+        System.out.println(index1 % index2); // 나머지
+    }
+}
